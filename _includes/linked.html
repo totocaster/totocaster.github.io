@@ -1,0 +1,8 @@
+<article class="linked">
+  <h1><a href="{{ include.post_content.link }}">{{ include.post_content.title }}</a></h1>
+  {{ include.post_content.content }}
+  <div class="byline">
+    <span class="linked-or-briefly">&rarr;</span>
+    <a href="{{ include.post_content.url }}">{{ include.post_content.date | date: "%A, %B %-d, %Y"}}</a>
+  </div>
+</article>

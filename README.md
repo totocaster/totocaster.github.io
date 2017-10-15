@@ -1,2 +1,3 @@
-# totocaster.github.io
-Online business card and hub for my online activity.
+# FitJSON
+
+Website for file specs.

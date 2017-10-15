@@ -1,0 +1,10 @@
+<article>
+  <h1><a href="{{ include.post_content.url }}">{{ include.post_content.title }}</a></h1>
+  {{ include.post_content.content }}
+  <div class="byline">
+    <a href="{{ include.post_content.url }}">{{ include.post_content.date | date: "%A, %B %-d, %Y"}}</a>
+    {% for tag in include.post_content.tags %}
+      &sdot; <span class="tag"><a href="/topic/{{ tag | slugaze }}/">{{ tag }}</a></span>
+    {% endfor %}
+  </div>
+</article>

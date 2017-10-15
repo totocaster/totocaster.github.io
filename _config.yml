@@ -1,0 +1,18 @@
+title: "Toto Tvalavadze"
+description: "Hi, I'm Toto. I desing and code iOS apps."
+
+show_downloads: false
+# google_analytics: [Your Google Analytics tracking ID] #
+
+theme: jekyll-theme-minimal
+
+permalink: /:year/:month/:title
+
+encoding: utf-8
+
+defaults:
+  -
+    scope:
+      path: "_posts"
+    values:
+      layout: "post"

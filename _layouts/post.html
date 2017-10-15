@@ -1,0 +1,22 @@
+---
+layout: default
+---
+{% if page.link %}
+  {% include linked.html post_content = page %}
+{% else %}
+  {% if page.tags contains 'snippet' %}
+    {% include snippet.html post_content = page %}
+  {% else %}
+    {% include post.html post_content = page %}
+  {% endif %}
+{% endif %}
+
+{% if page.tags contains 'snippet' %}
+  <section class="article-meta micropost">
+    <p>This is a microblog entry, a snippet. Some call it micropost. I cross-post these to <a href="//twitter.com/totocaster">@totocaster</a> too. Additionally, there is an <a href="/rss">RSS</a> feed only for snippets.</p>
+  </section>
+{% else %}
+  <section class="article-meta">
+    <p>There are no comments on this website. In case you want to send feedback, I encourage you to write response blog post and send me a link to it via <a href="//twitter.com/totocaster">Twitter</a>. For more articles and linked resources subscribe via <a href="/rss">RSS</a>.</p>
+  </section>
+{% endif %}
